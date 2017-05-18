@@ -1,0 +1,20 @@
+social_pro_projects:
+    resource: "@SocialProBundle/Resources/config/routing/projects.yml"
+    prefix:   /projects
+
+social_pro_subprojects:
+        resource: "@SocialProBundle/Resources/config/routing/subprojects.yml"
+        prefix:   /subprojects
+
+social_pro_homepage:
+    path:     /
+    defaults: { _controller: SocialProBundle:Default:index }
+social_pro_newsfeed:
+    path:     /newsfeed
+    defaults: { _controller: SocialProBundle:Default:newsfeed }
+admin_home:
+    path:     /admin
+    defaults: { _controller: SocialProBundle:Default:admin }
+admin_show_userlist:
+    path:     /admin/userlist
+    defaults: { _controller: SocixalProBundle:Admin:showUsers }
